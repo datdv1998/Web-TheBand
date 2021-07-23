@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
     <link rel="icon" href="./assets/icon/icons8_shutdown_16.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -30,8 +31,13 @@
                 </ul>
                 <!-- Kết thúc nav --> 
 
-                <!-- Bắt đầu: Search button --> 
 
+                <!-- Bắt đầu: Mobile menu button --> 
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
+
+                <!-- Bắt đầu: Search button --> 
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
                 </div>
@@ -68,17 +74,17 @@
                 
                 <div class="row members-list">
                     
-                    <div class="col col-thrid text-center">
+                    <div class="col col-thrid s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">                        
                     </div>
 
-                    <div class="col col-thrid text-center">
+                    <div class="col col-thrid s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">                        
                     </div>
                     
-                    <div class="col col-thrid text-center">
+                    <div class="col col-thrid s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">                        
                     </div>
@@ -109,7 +115,7 @@
                     <!-- Place-->
                     <div class="row places-list">
                         
-                        <div class="col col-thrid">
+                        <div class="col col-thrid s-col-full mt-16">
                             <img src="./assets/img/place/place1.jpg" alt="New York" class="place-img " >
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -119,7 +125,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-thrid">
+                        <div class="col col-thrid s-col-full mt-16">
                             <img src="./assets/img/place/place2.jpg" alt="New York" class="place-img " >
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
@@ -129,7 +135,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-thrid">
+                        <div class="col col-thrid s-col-full mt-16">
                             <img src="./assets/img/place/place3.jpg" alt="New York" class="place-img " >
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -154,18 +160,18 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                 <div class = "row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                        <p><i class="ti-mobile"></i>Phone:  <a href="tel: 0326889885">0326889885</a> </p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a> </p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" name="" placeholder="Email" required id="" class="form-control">
                                 </div>
 
@@ -177,7 +183,7 @@
                                 </div>
                             </div>
 
-                            <input class="form-submit-btn mt-16" type="submit" value="SEND">
+                            <input class="form-submit-btn mt-16 s-col-full" type="submit" value="SEND ">
                         </form>
                 </div>
             </div>
@@ -202,9 +208,10 @@
 
             <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
+        
     </div>
 
-    <div class="modal js-modal">
+    <div class="modal js-modal ">
         <div class="modal-container js-modal-container">
 
             <div class="modal-close js-modal-close">
@@ -218,26 +225,28 @@
                 Tickets
             </header>
 
-            <div class="modal-body">
+            <form action="">
+                <div class="modal-body">
                 
-                <label for="ticket-quantity" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
-
-                <label for="ticket-email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send To
-                </label>
-                <input id="ticket-email" type="text" class="modal-input" placeholder="Enter email">
-
-                <button id="buy-tickets">
-                    Pay
-                    <i class="ti-check"></i>
-                </button>
-
-            </div>
+                    <label for="ticket-quantity" class="modal-label">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input id="ticket-quantity" type="text" required id="" class="modal-input" placeholder="How many?">
+    
+                    <label for="ticket-email" class="modal-label">
+                        <i class="ti-user"></i>
+                        Send To
+                    </label>
+                    <input id="ticket-email" type="text" required id="" class="modal-input" placeholder="Enter email">
+    
+                    <button id="buy-tickets">
+                        Pay
+                        <i class="ti-check"></i>
+                    </button>
+    
+                </div>
+            </form>
 
             <div class="modal-footer js-modal-help">
                 <p class="modal-help">Need <a href="">help?</a></p>
@@ -279,5 +288,45 @@
 
 
     </script>
+
+    <script>
+        var header = document.getElementById('header');
+        //mobile-menu
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        //Đóng -Mở mobile menu
+        mobileMenu.onclick = function(){
+            var isClose = header.clientHeight === headerHeight ;
+            if(isClose){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+        }
+
+        //Tự động đóng khi chọn phần tử trong menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i = 0; i<menuItems.length; i++)
+        {
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function(event){
+                var isParentMenu = (this.nextElementSibling && this.nextElementSibling.classList.contains('subnav'));
+                if(isParentMenu){
+                    event.preventDefault();  
+                }
+                else{                    
+                    header.style.height = null;
+                }
+            }
+        }
+
+
+        
+
+    </script>
+
 </body>
 </html>
